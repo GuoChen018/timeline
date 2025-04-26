@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'CommitMonoBold';
+    src: url('fonts/commit-mono-bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CommitMonoRegular';
+    src: url('fonts/commit-mono-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    padding: 4px;
+}
+
+body {
+    font-family: 'CommitMonoRegular', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+}
+
+.container:hover {
+    background-color: var(--color-container-hover);
+    transition: background-color 0.2s ease;
+}
+
+.header {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    padding: 12px;
+    text-align: left;
+}
+.header h2 {
+    font-size: 14px;
+    color: var(--color-text);
+    font-family: 'CommitMonoBold', sans-serif;
+}
+
+.header p {
+    margin-top: 4px;
+    font-size: 12px;
+    color: var(--color-text);
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#project-title {
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.header-title i {
+    font-size: 14px;
+    color: var(--color-text);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+}
+
+.collapsed {
+    max-height: 0;
+    padding: 0;
+    border: none;
+}
+
+.box {
+    flex-grow: 1;
+    text-align: left;
+    padding: 12px;
+    border-top: 1px solid var(--color-border);
+    border-right: 1px solid var(--color-border);
+    color: var(--color-text);
+}
+
+.box:last-child {
+    border-right: none;
+}
+
+.box h3 {
+    display: inline-block; /* Limits the hover area to the text */
+    font-size: 13px;
+    color: var(--color-text);
+    padding: 4px;
+    border-radius: 4px;
+    font-family: 'CommitMonoBold', sans-serif;
+}
+
+.box p {
+    margin-top: 4px;
+    font-size: 11px;
+    color: var(--color-text);
+}
+
+.header:hover {
+    background-color: var(--color-container-hover);
+    cursor: pointer;
+}
+
+#project-title:hover {
+    background-color: var(--color-hover);
+    cursor: text; /* Text cursor to indicate editability */
+}
+
+#project-title:focus {
+    outline: none; /* Removes the default focus outline */
+}
+
+.box h3:hover {
+    background-color: var(--color-hover);
+    cursor: text; /* Text cursor to indicate editability */
+}
+
+.box h3:focus {
+    outline: none; /* Removes the default focus outline */
+}
+
+/* Color Switcher Styles */
+.color-switcher {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    z-index: 1000;
+    font-family: 'CommitMonoRegular', sans-serif;
+}
+
+.switcher-label {
+    font-size: 12px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.color-options {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    max-width: 200px;
+}
+
+.color-option {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    border: 2px solid transparent;
+}
+
+.color-option:hover {
+    transform: scale(1.1);
+}
+
+.color-option.active {
+    border-color: #aaa;
+}
+
+/* Color options */
+.color-option.blue {
+    background-color: var(--blue9);
+}
+
+.color-option.green {
+    background-color: var(--green9);
+}
+
+.color-option.gray {
+    background-color: var(--gray9);
+}
+
+.color-option.red {
+    background-color: var(--red9);
+}
+
+.color-option.pink {
+    background-color: var(--pink9);
+}
+
+.color-option.purple {
+    background-color: var(--purple9);
+}
+
+.color-option.teal {
+    background-color: var(--teal9);
+}
+
+.color-option.orange {
+    background-color: var(--orange9);
+}
+
+.color-option.yellow {
+    background-color: var(--yellow9);
+} 

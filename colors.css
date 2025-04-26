@@ -1,0 +1,103 @@
+@import url("https://cdn.jsdelivr.net/npm/@radix-ui/colors@0.1.8/blue.css");
+@import url("https://cdn.jsdelivr.net/npm/@radix-ui/colors@0.1.8/green.css");
+@import url("https://cdn.jsdelivr.net/npm/@radix-ui/colors@0.1.8/gray.css");
+@import url("https://cdn.jsdelivr.net/npm/@radix-ui/colors@0.1.8/red.css");
+@import url("https://cdn.jsdelivr.net/npm/@radix-ui/colors@0.1.8/pink.css");
+@import url("https://cdn.jsdelivr.net/npm/@radix-ui/colors@0.1.8/purple.css");
+@import url("https://cdn.jsdelivr.net/npm/@radix-ui/colors@0.1.8/teal.css");
+@import url("https://cdn.jsdelivr.net/npm/@radix-ui/colors@0.1.8/orange.css");
+@import url("https://cdn.jsdelivr.net/npm/@radix-ui/colors@0.1.8/yellow.css");
+
+:root {
+    --color-theme: 'blue';
+
+    /* Define color steps for the theme */
+    --color-bg: var(--blue2);
+    --color-text: var(--blue11);
+    --color-border: var(--blue6);
+    --color-hover: var(--blue4);
+    --color-container-hover: var(--blue3);
+}
+
+/* Add green theme variables */
+:root[data-theme="green"] {
+    --color-bg: var(--green2);
+    --color-text: var(--green11);
+    --color-border: var(--green6);
+    --color-hover: var(--green4);
+    --color-container-hover: var(--green3);
+}
+
+/* Gray theme */
+:root[data-theme="gray"] {
+    --color-bg: var(--gray2);
+    --color-text: var(--gray11);
+    --color-border: var(--gray6);
+    --color-hover: var(--gray4);
+    --color-container-hover: var(--gray3);
+}
+
+/* Red theme */
+:root[data-theme="red"] {
+    --color-bg: var(--red2);
+    --color-text: var(--red11);
+    --color-border: var(--red6);
+    --color-hover: var(--red4);
+    --color-container-hover: var(--red3);
+}
+
+/* Pink theme */
+:root[data-theme="pink"] {
+    --color-bg: var(--pink2);
+    --color-text: var(--pink11);
+    --color-border: var(--pink6);
+    --color-hover: var(--pink4);
+    --color-container-hover: var(--pink3);
+}
+
+/* Purple theme */
+:root[data-theme="purple"] {
+    --color-bg: var(--purple2);
+    --color-text: var(--purple11);
+    --color-border: var(--purple6);
+    --color-hover: var(--purple4);
+    --color-container-hover: var(--purple3);
+}
+
+/* Teal theme */
+:root[data-theme="teal"] {
+    --color-bg: var(--teal2);
+    --color-text: var(--teal11);
+    --color-border: var(--teal6);
+    --color-hover: var(--teal4);
+    --color-container-hover: var(--teal3);
+}
+
+/* Orange theme */
+:root[data-theme="orange"] {
+    --color-bg: var(--orange2);
+    --color-text: var(--orange11);
+    --color-border: var(--orange6);
+    --color-hover: var(--orange4);
+    --color-container-hover: var(--orange3);
+}
+
+/* Yellow theme */
+:root[data-theme="yellow"] {
+    --color-bg: var(--yellow2);
+    --color-text: var(--yellow11);
+    --color-border: var(--yellow6);
+    --color-hover: var(--yellow4);
+    --color-container-hover: var(--yellow3);
+}
+
+/* Apply the colors to your components */
+.header {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+.box {
+    border-color: var(--color-border);
+    color: var(--color-text);
+} 
